@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import Quotes from "./Quotes";
 import axios from "axios";
-import { Card, Carousel } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 const CharacterCard = ({ character }) => {
   const [opacity, setOpacity] = useState("opacity-0");
@@ -51,19 +52,7 @@ const CharacterCard = ({ character }) => {
           </p>
         </div>
         <hr />
-        <div className="quotes">
-          {quotes.length > 0 ? (
-            <Carousel indicators={false} controls={false}>
-              {quotes.map((quote) => (
-                <Carousel.Item key={quote.quote_id}>
-                  <p>{quote.quote}</p>
-                </Carousel.Item>
-              ))}
-            </Carousel>
-          ) : (
-            "Loading.."
-          )}
-        </div>
+        <Quotes quotes={quotes} />
       </div>
     </Card>
   );
