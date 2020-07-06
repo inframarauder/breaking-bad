@@ -98,7 +98,7 @@ body {
 }
 
 .character-img {
-  height: 400px;
+  height: 450px;
 }
 
 .middle {
@@ -121,6 +121,14 @@ body {
   opacity: 0.8;
 }
 
-.character-details-header {
+.character-details {
   padding: 5px;
+}
+
+.quotes {
+  max-width: 70%;
+  font-size: 20px;
+  float: right;
+  text-align: right;
+  padding: 10px;
 }
