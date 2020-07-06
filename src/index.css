@@ -60,6 +60,7 @@ body {
   position: relative;
   display: inline-flex;
   float: right;
+  padding: 10px;
 }
 
 .theme-toggler-btn {
@@ -89,10 +90,37 @@ body {
   border: 2px solid rgb(72, 127, 90);
   border-radius: 8px;
   background-color: #555;
-  opacity: 0.9;
   color: #fff;
+}
+
+.character-card:hover {
+  cursor: pointer;
 }
 
 .character-img {
   height: 400px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #2d2d2d;
+  height: 100%;
+  width: 100%;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-08 {
+  opacity: 0.8;
+}
+
+.character-details-header {
+  padding: 5px;
 }
