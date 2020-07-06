@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useContext, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ThemeContext } from "../Contexts/ThemeContext";
@@ -21,7 +23,7 @@ const CharacterList = () => {
         console.error(error);
       }
     })();
-  }, [addCharacters]);
+  }, []);
 
   return (
     <div className={theme.isDarkTheme ? theme.dark : theme.light}>
