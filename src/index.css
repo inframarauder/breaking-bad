@@ -73,3 +73,7 @@ body {
   font-size: 30px;
   padding: 10px;
 }
+
+.character-list-container {
+  min-height: 100vh;
+}
