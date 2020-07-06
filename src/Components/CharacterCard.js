@@ -18,7 +18,7 @@ const CharacterCard = ({ character }) => {
         console.error(error);
       }
     })();
-  }, []);
+  }, [character.name]);
 
   const toggleOpacity = () => {
     setOpacity((opacity) =>

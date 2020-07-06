@@ -21,7 +21,7 @@ const CharacterList = () => {
         console.error(error);
       }
     })();
-  }, []);
+  }, [addCharacters]);
 
   return (
     <div className={theme.isDarkTheme ? theme.dark : theme.light}>
