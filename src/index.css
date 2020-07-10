@@ -148,3 +148,22 @@ body {
 .search-bar:focus {
   outline: none;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(72, 127, 90);
+  width: 100%;
+  padding: 10px;
+}
+
+.footer a {
+  color: #2d2d2d;
+}
+
+.footer i {
+  color: #ff0000;
+  font-size: 30px;
+}
